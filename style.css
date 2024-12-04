@@ -6,27 +6,15 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    padding: 20px;
 }
 
 header {
-    background: linear-gradient(135deg, #ff6b6b, #f7d94c);
-    color: #fff;
-    padding: 40px 0;
     text-align: center;
-    position: relative;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-nav {
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -36,98 +24,28 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #333; /* Cor do texto ao passar o mouse */
-}
-
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 60px;
+    color: #007BFF; /* Cor do link */
 }
 
 h2 {
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 2em;
-    text-align: center;
-    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-h2::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 4px;
-    background: #ff6b6b; /* Cor da linha abaixo do título */
-    margin: 10px auto;
-}
-
-.video-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap:wrap;
-    gap: 20px; /* Espaçamento entre os vídeos */
-    padding: 0 20px; /* Padding lateral */
-}
-
-.video-gallery iframe {
+iframe {
     width: 100%;
     max-width: 400px; /* Largura máxima dos vídeos */
     height: 225px; /* Altura dos vídeos */
-    border: none; /* Remove a borda padrão do iframe */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para os vídeos */
-    transition: transform 0.3s; /* Efeito de transição */
-}
-
-.video-gallery iframe:hover {
-    transform: scale(1.05); /* Aumenta o tamanho do vídeo ao passar o mouse */
+    display: block;
+    margin: 10px auto; /* Centraliza os vídeos */
 }
 
 footer {
     text-align: center;
-    padding: 20px 0;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .video-gallery {
-        flex-direction: column; /* Alinha os vídeos verticalmente em telas menores */
-        align-items: center; /* Centraliza os vídeos */
-    }
-
-    .video-gallery iframe {
-        width: 90%; /* Largura maior em telas menores */
-        height: 200px; /* Mantém a altura */
-    }
+    margin-top: 20px;
 }
